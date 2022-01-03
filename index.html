@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link rel="icon" href="./Assets/logo.svg">
+
+    <link href="./Assets/Style/build.css" rel="stylesheet">
+    <!-- Google Font Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gafata?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <!-- End of Google Font API -->
+    <title>Sina Khoshgofar | Software Enginner</title>
+</head>
+
+<body class="dark:bg-sinabackgroundcolor antialiased">
+    <!-- navigation componenet -->
+    <div class="text-lg
+                lg:text-xl lg:font-Yusei-Magic
+                3xl:max-w-screen-3xl 3xl:mx-auto antialiased
+                z-50">
+
+        <!-- navigation -->
+        <div class="navigation bg-sinabackgroundcolor flex fixed z-20 w-full top-0
+         justify-between p-7 font-semibold ">
+
+            <!-- TEXT and LOGO -->
+            <div class="flex flex-row justify-center items-center text-white font-thin">
+                <img src="./Assets/logo.svg" alt="logo" class="w-11 rotate-1 hover:animate-pulse hover:rotate-1 duration-150">
+                <a href="#" class="hidden md:flex  w-sina hover:animate-pulse">Sina Khoshgoftar</a>
+            </div>
+
+            <!-- Primary Navbar -->
+            <div class="hidden lg:flex lg:justify-between lg:items-center
+                        space-x-8 font-semibold text-md text-sinapinkcolor capitalize">
+
+                <a href="#about"
+                    class="hover:text-sinapinkbordercolor hover:border-b-2 border-sinapinkbordercolor hover:scale-110 duration-500 flex justify-center">
+                    <span class="text-sinapinkcolor">I.</span>
+                    About
+                </a>
+
+                <a href="#tech"
+                    class="hover:text-sinapinkbordercolor hover:border-b-2 border-sinapinkbordercolor hover:scale-110 duration-500 flex justify-center">
+                    <span class="text-sinapinkcolor">II.</span>
+                    Stack</a>
+
+                <a href="#projects"
+                    class="hover:text-sinapinkbordercolor hover:border-b-2 border-sinapinkbordercolor hover:scale-110 duration-500 flex justify-center">
+                    <span class="text-sinapinkcolor">III.</span>
+                    Projects</a>
+
+                <a href="#blog"
+                    class="hover:text-sinapinkbordercolor hover:border-b-2 border-sinapinkbordercolor hover:scale-110 duration-500 flex justify-center">
+                    <span class="text-sinapinkcolor">IV.</span>
+                    Blog</a>
+
+                <a href="#contact"
+                    class="hover:text-sinapinkbordercolor hover:border-b-2 border-sinapinkbordercolor hover:scale-110 duration-500 flex justify-center ">
+                    <span class="text-sinapinkcolor">V.</span>
+                    Contact</a>
+
+                <a href="https://github.com/sinakgt/portfolio/Resume.pdf"
+                    class="border-2 px-4 py-2 rounded-md border-sinapinkbordercolor animate-pulse transition duration-500 hover:scale-110 flex justify-center">Resume</a>
+            </div>
+            <!-- End Primary Navbar -->
+
+            <!-- mobile menu button -->
+            <div class="lg:hidden flex items-center">
+                <button class="mobile-menu-button focus:outline-none text-sinapinkcolor">
+                    <svg class="h-9 w-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- End mobile menu button -->
+
+        </div>
+        <!-- End Navigation -->
+
+
+        <!-- sidebar overlay -->
+        <div class="hidden navbar-backdrop
+                    w-screen h-screen
+                    justify-end items-end z-40
+                    fixed inset-0
+                    bg-sinasidebarcolor/60  ">
+
+            <!-- Side Bar -->
+            <div class="relative sidebar
+                        w-2/3 h-full
+                        flex flex-col justify-between
+                        bg-white dark:bg-sinasidebarcolor font-semibold
+                        z-50">
+
+                <!-- mobile menu Container -->
+                <div class="flex flex-row justify-between p-5">
+                    <!-- Darkmode Button Mobile -->
+                    <button class="dark-mode-button  focus:outline-none  dark:text-white mt-3 mr-1">
+                        <svg class="hover:scale-125 transition duration-300 " width="25pt" height="25pt"
+                        viewBox="0 0 468 470" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <g id="#050d24ff">
+                        </g>
+                        <g id="#f24db0ff">
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 228.44 5.67 C 237.37 1.99 248.41 8.40 249.73 17.93 C 250.34 25.60 249.84 33.33 250.01 41.02 C 250.34 47.46 246.59 53.93 240.64 56.53 C 233.44 60.06 223.96 56.96 220.14 49.95 C 216.92 44.54 218.27 38.01 218.00 32.05 C 218.20 26.84 217.47 21.54 218.58 16.41 C 219.91 11.53 223.69 7.41 228.44 5.67 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 79.37 67.62 C 84.62 66.30 90.43 67.91 94.29 71.70 C 98.68 75.96 102.92 80.37 107.29 84.64 C 110.57 87.65 113.55 91.39 114.05 95.97 C 115.26 103.37 110.49 111.12 103.35 113.38 C 97.60 115.38 90.89 113.70 86.69 109.32 C 81.69 104.30 76.64 99.32 71.67 94.26 C 66.81 89.38 65.74 81.26 69.24 75.30 C 71.33 71.45 75.14 68.65 79.37 67.62 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 381.38 67.55 C 388.04 65.97 395.49 69.25 398.75 75.28 C 402.12 81.01 401.30 88.81 396.81 93.72 C 392.26 98.54 387.42 103.08 382.81 107.84 C 378.94 112.34 372.90 115.20 366.92 113.95 C 358.30 112.66 352.09 103.42 354.12 94.95 C 355.37 88.28 361.41 84.38 365.68 79.69 C 370.58 75.30 374.52 68.99 381.38 67.55 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 227.38 111.50 C 257.16 109.87 287.45 119.48 310.63 138.30 C 330.05 153.77 344.60 175.30 351.57 199.14 C 361.90 233.26 356.23 271.83 336.38 301.46 C 319.02 328.04 290.89 347.40 259.79 353.86 C 230.90 360.24 199.72 355.53 173.99 340.93 C 146.65 325.71 125.55 299.58 116.65 269.55 C 106.90 238.06 110.76 202.67 127.05 174.02 C 140.53 149.83 162.51 130.48 188.24 120.22 C 200.67 115.12 213.99 112.34 227.38 111.50 M 228.40 143.52 C 206.80 144.80 185.80 154.14 170.45 169.39 C 155.93 183.57 146.42 202.78 144.04 222.93 C 141.31 244.30 146.62 266.59 158.70 284.43 C 170.16 301.65 187.71 314.71 207.51 320.69 C 227.66 326.90 249.97 325.75 269.36 317.46 C 290.54 308.57 308.01 291.26 317.11 270.17 C 324.66 252.93 326.62 233.29 322.60 214.90 C 317.87 192.36 304.04 171.94 284.96 159.05 C 268.54 147.77 248.28 142.25 228.40 143.52 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 16.33 218.61 C 21.47 217.45 26.80 218.20 32.02 218.00 C 38.82 218.18 46.65 216.75 52.20 221.70 C 59.83 227.63 59.83 240.38 52.19 246.30 C 46.33 251.46 38.10 249.72 30.98 250.00 C 24.56 249.72 17.37 251.23 11.75 247.26 C 4.63 242.73 2.46 232.28 7.25 225.31 C 9.33 222.08 12.62 219.64 16.33 218.61 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 423.25 218.26 C 431.51 217.71 439.83 218.07 448.12 218.05 C 456.74 218.21 464.05 226.43 463.30 235.01 C 462.93 242.88 456.02 249.76 448.11 249.94 C 440.70 250.07 433.28 250.00 425.87 249.98 C 418.13 250.07 411.03 243.79 410.15 236.12 C 408.84 227.92 415.03 219.48 423.25 218.26 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 93.38 354.53 C 103.28 350.95 114.76 359.48 114.21 369.98 C 114.41 378.37 106.93 383.35 101.81 388.81 C 97.39 392.78 93.85 398.28 87.90 400.10 C 81.21 402.31 73.26 399.40 69.62 393.35 C 65.84 387.55 66.52 379.34 71.21 374.24 C 75.59 369.61 80.25 365.23 84.69 360.65 C 87.15 358.08 89.88 355.55 93.38 354.53 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 364.42 354.69 C 369.98 352.67 376.55 354.07 380.79 358.20 C 386.00 363.33 391.16 368.52 396.31 373.72 C 400.82 378.28 402.13 385.63 399.40 391.44 C 396.38 398.52 387.82 402.45 380.47 400.22 C 374.35 398.51 370.71 392.91 366.23 388.85 C 361.83 383.95 355.48 379.98 354.14 373.09 C 352.34 365.50 357.03 357.14 364.42 354.69 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 231.25 410.24 C 240.22 408.40 249.60 415.75 249.92 424.90 C 250.07 432.63 250.04 440.36 249.94 448.09 C 249.77 456.02 242.85 462.97 234.95 463.30 C 226.39 464.01 218.23 456.74 218.06 448.15 C 217.93 440.71 218.00 433.28 218.02 425.84 C 217.94 418.34 223.85 411.41 231.25 410.24 Z" />
+                        </g>
+                    </svg>
+                        
+                    </button>
+
+
+                    <!-- mobile menu close button -->
+                    <button class="mobile-menu-close-button  focus:outline-none  dark:text-white mt-3 mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 8.707l3.646 3.647.708-.707L8.707 8l3.647-3.646-.707-.708L8 7.293 4.354 3.646l-.707.708L7.293 8l-3.646 3.646.707.708L8 8.707z"
+                                clip-rule="evenodd" fill="#fb5085" class=" svgShape"></path>
+                        </svg>
+                        
+                    </button>
+                </div>
+                <!-- End menu Container -->
+                
+                <!-- Mobile Navigation bar  -->
+                <nav>
+                    <ul class="flex flex-col
+                               justify-center items-center
+                               text-sinapinkcolor text-md">
+
+                        <li class="mt-6
+                                   hover:border-b-sinapinkcolor hover:text-sinapinkbordercolor hover:scale-110
+                                   active:bg-sinapinkcolor
+                                   font-semibold border-sinapinkbordercolor">
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li class="mt-6
+                                   hover:border-b-sinapinkcolor hover:text-sinapinkbordercolor hover:scale-110
+                                   active:bg-sinapinkcolor
+                                   font-semibold border-sinapinkbordercolor">
+                            <a href="#tech">Tech Stack</a>
+                        </li>
+
+                        <li class="mt-6
+                                   hover:border-b-sinapinkcolor hover:text-sinapinkbordercolor hover:scale-110
+                                   active:bg-sinapinkcolor
+                                   font-semibold border-sinapinkbordercolor">
+                            <a href="#projects">Projects</a>
+                        </li>
+
+                        <li class="mt-6
+                                   hover:border-b-sinapinkcolor hover:text-sinapinkbordercolor hover:scale-110
+                                   active:bg-sinapinkcolor
+                                   font-semibold border-sinapinkbordercolor">
+                            <a href="#blog"> Blog </a>
+                        </li>
+
+                        <li class="mt-6
+                                   hover:border-b-sinapinkcolor hover:text-sinapinkbordercolor hover:scale-110
+                                   active:bg-sinapinkcolor
+                                   font-semibold border-sinapinkbordercolor">
+                            <a href="#contact">Contact </a>
+                        </li>
+
+                        <li class="mt-12 ">
+                            <a href="https://github.com/sinakgt/portfolio/Resume.pdf"
+                                class="border-2 border-sinapinkbordercolor
+                                       px-4 py-2
+                                       rounded-md
+                                       hover:animate-pulse active:bg-sinapinkcolor">Resume</a>
+                        </li>
+                    </ul>
+                    <!-- End Mobile Navigation bar  -->
+                </nav>
+
+                <div class="flex justify-center   mb-5  items-center active:bg-sinapinkcolor">
+                    <span class="fixed text-gray-400 text-xs bottom-0 mb-3 italic">Copyright © Sina khoshgoftar 2022</span>
+                </div>
+            </div>
+            <!-- End Side Bar -->
+
+        </div>
+         <!-- End Sidebar Overlay -->
+
+    </div>
+    <!-- End Navigation Componenet -->
+
+    <!-- Start social Media -->
+    <div class="hidden 
+                lg:flex
+                3xl:max-w-screen-3xl  3xl:mx-auto
+                flex-col justify-center
+                bottom-0">
+
+        <ul class="flex flex-col justify-center items-center
+                   fixed
+                   w-fit ml-6  bottom-0">
+            
+            <!-- Github Link -->
+            <li>
+                <a href="https://github.com/sinakgt" target="_blank">
+                    <svg class="fill-sinagithubcolor hover:scale-125 transition duration-300" width="48px" height="48px"
+                        viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+                    </svg>
+                </a>
+            </li>
+            <!-- End Link -->
+
+            <!-- Linkedin Link -->
+            <li class="mt-7">
+                <a href="https://www.linkedin.com/in/sina-khoshgoftar/" target="_blank">
+                    <svg class="fill-sinalinkedincolor hover:scale-125 transition duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+            </li>
+            <!-- End Linkedin Link -->
+
+            <!-- Telegram Link -->
+            <li class="mt-7">
+                <a href="https://t.me/sina_khoshgoftar">
+                    <svg class="fill-sinatelegramcolor hover:scale-125 transition duration-300" version="1.0"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100"
+                        enable-background="new 0 0 100 100" xml:space="preserve">
+                        <path d="M84.16,14.148l-71.047,29.57c0,0-3.359,1.221-3.099,3.473c0.267,2.256,3.008,3.288,3.008,3.288l17.877,6.382
+	c0,0,5.396,18.772,6.458,22.344c1.062,3.562,1.914,3.646,1.914,3.646c0.989,0.456,1.888-0.27,1.888-0.27l11.55-11.169L70.71,86.054
+	c4.869,2.253,6.641-2.441,6.641-2.441L90,15.935C90,11.427,84.16,14.148,84.16,14.148z M71.582,78.17L52.324,62.51l-5.976,5.777
+	l1.314-12.291l25.67-24.329L38.341,52.441l-15.521-5.54l59.217-24.648L71.582,78.17z" />
+                    </svg>
+                </a>
+            </li>
+            <!-- End Telegram Link -->
+
+            <!-- DarkMode Button Link -->
+            <li class="dark-mode-button mt-7">
+                <svg class="hover:scale-125 transition duration-300 " width="42pt" height="42pt"
+                        viewBox="0 0 468 470" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <g id="#050d24ff">
+                        </g>
+                        <g id="#f24db0ff">
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 228.44 5.67 C 237.37 1.99 248.41 8.40 249.73 17.93 C 250.34 25.60 249.84 33.33 250.01 41.02 C 250.34 47.46 246.59 53.93 240.64 56.53 C 233.44 60.06 223.96 56.96 220.14 49.95 C 216.92 44.54 218.27 38.01 218.00 32.05 C 218.20 26.84 217.47 21.54 218.58 16.41 C 219.91 11.53 223.69 7.41 228.44 5.67 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 79.37 67.62 C 84.62 66.30 90.43 67.91 94.29 71.70 C 98.68 75.96 102.92 80.37 107.29 84.64 C 110.57 87.65 113.55 91.39 114.05 95.97 C 115.26 103.37 110.49 111.12 103.35 113.38 C 97.60 115.38 90.89 113.70 86.69 109.32 C 81.69 104.30 76.64 99.32 71.67 94.26 C 66.81 89.38 65.74 81.26 69.24 75.30 C 71.33 71.45 75.14 68.65 79.37 67.62 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 381.38 67.55 C 388.04 65.97 395.49 69.25 398.75 75.28 C 402.12 81.01 401.30 88.81 396.81 93.72 C 392.26 98.54 387.42 103.08 382.81 107.84 C 378.94 112.34 372.90 115.20 366.92 113.95 C 358.30 112.66 352.09 103.42 354.12 94.95 C 355.37 88.28 361.41 84.38 365.68 79.69 C 370.58 75.30 374.52 68.99 381.38 67.55 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 227.38 111.50 C 257.16 109.87 287.45 119.48 310.63 138.30 C 330.05 153.77 344.60 175.30 351.57 199.14 C 361.90 233.26 356.23 271.83 336.38 301.46 C 319.02 328.04 290.89 347.40 259.79 353.86 C 230.90 360.24 199.72 355.53 173.99 340.93 C 146.65 325.71 125.55 299.58 116.65 269.55 C 106.90 238.06 110.76 202.67 127.05 174.02 C 140.53 149.83 162.51 130.48 188.24 120.22 C 200.67 115.12 213.99 112.34 227.38 111.50 M 228.40 143.52 C 206.80 144.80 185.80 154.14 170.45 169.39 C 155.93 183.57 146.42 202.78 144.04 222.93 C 141.31 244.30 146.62 266.59 158.70 284.43 C 170.16 301.65 187.71 314.71 207.51 320.69 C 227.66 326.90 249.97 325.75 269.36 317.46 C 290.54 308.57 308.01 291.26 317.11 270.17 C 324.66 252.93 326.62 233.29 322.60 214.90 C 317.87 192.36 304.04 171.94 284.96 159.05 C 268.54 147.77 248.28 142.25 228.40 143.52 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 16.33 218.61 C 21.47 217.45 26.80 218.20 32.02 218.00 C 38.82 218.18 46.65 216.75 52.20 221.70 C 59.83 227.63 59.83 240.38 52.19 246.30 C 46.33 251.46 38.10 249.72 30.98 250.00 C 24.56 249.72 17.37 251.23 11.75 247.26 C 4.63 242.73 2.46 232.28 7.25 225.31 C 9.33 222.08 12.62 219.64 16.33 218.61 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 423.25 218.26 C 431.51 217.71 439.83 218.07 448.12 218.05 C 456.74 218.21 464.05 226.43 463.30 235.01 C 462.93 242.88 456.02 249.76 448.11 249.94 C 440.70 250.07 433.28 250.00 425.87 249.98 C 418.13 250.07 411.03 243.79 410.15 236.12 C 408.84 227.92 415.03 219.48 423.25 218.26 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 93.38 354.53 C 103.28 350.95 114.76 359.48 114.21 369.98 C 114.41 378.37 106.93 383.35 101.81 388.81 C 97.39 392.78 93.85 398.28 87.90 400.10 C 81.21 402.31 73.26 399.40 69.62 393.35 C 65.84 387.55 66.52 379.34 71.21 374.24 C 75.59 369.61 80.25 365.23 84.69 360.65 C 87.15 358.08 89.88 355.55 93.38 354.53 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 364.42 354.69 C 369.98 352.67 376.55 354.07 380.79 358.20 C 386.00 363.33 391.16 368.52 396.31 373.72 C 400.82 378.28 402.13 385.63 399.40 391.44 C 396.38 398.52 387.82 402.45 380.47 400.22 C 374.35 398.51 370.71 392.91 366.23 388.85 C 361.83 383.95 355.48 379.98 354.14 373.09 C 352.34 365.50 357.03 357.14 364.42 354.69 Z" />
+                            <path fill="#f24db0" opacity="1.00"
+                                d=" M 231.25 410.24 C 240.22 408.40 249.60 415.75 249.92 424.90 C 250.07 432.63 250.04 440.36 249.94 448.09 C 249.77 456.02 242.85 462.97 234.95 463.30 C 226.39 464.01 218.23 456.74 218.06 448.15 C 217.93 440.71 218.00 433.28 218.02 425.84 C 217.94 418.34 223.85 411.41 231.25 410.24 Z" />
+                        </g>
+                    </svg>
+            </li>
+            <!-- End DarkMode Button Link -->
+
+            <!-- Botton Link Of social media -->
+            <div class=" w-1 h-28 bg-sinapinkcolor rounded-md flex justify-center bottom-0 items-center mt-10">
+                <span class="fixed  text-xs bottom-0 mb-3 italic"></span>
+            </div>
+            <!-- End Link Of social media -->
+        </ul>
+    </div>
+    <!-- End social Media -->
+
+    <!-- Main Section of Page -->
+    <div class="lg:px-36 lg:my-0 lg:mx-20 lg:pr-36
+                3xl:max-w-screen-3xl 3xl:mx-auto">
+
+        <!-- Introduction Section -->
+        <section id="Introduction" class="px-6 py-16 
+                                          md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                          lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                          2xl:py-60 2xl:mx-36 2xl:px-0 2xl:my-0
+                                          font-Yusei-Magic">
+
+            <!-- Introduction Heading -->
+            <div>
+                <h1 class="md:text-sm lg:text-base
+                           text-sinapinkcolor text-sm
+                           pb-4">Hello World! My name is</h1>
+
+                <h2 class="md:text-5xl md:pb-4
+                           text-white text-3xl">Sina Khoshgoftar</h2>
+
+                <h3 class="md:text-5xl
+                           text-gray-300 text-3xl pb-12">Limitless Software Enginner!</h3>
+            </div>
+            <!-- End Introduction Heading -->
+
+            <!-- Introduction Text -->
+            <div class="md:mr-36 lg:text-2xl lg:mr-9
+                        capitalize text-gray-300 text-lg ">
+
+                <h4 class="lg:mb-8 mb-4">I'm
+                    <a class="text-sinapinkcolor">Limitless Software Enginner</a>,
+                    i don't have any limit in my works, i can learn new technologys and
+                    apply them in my work fast as possible also i'm a
+                    <a class="text-sinapinkcolor" href="./blog.html">problem solver</a>
+                    person with creative mindset and passion for learning and innovation.
+                </h4>
+
+                <h4 class="lg:mb-8 mb-4 ">I'm currently working as software Enginner and as a
+                    <a class="text-sinapinkcolor" href="./blog.html">Freelancer.</a>
+                </h4>
+
+                <h4 class="mb-4">Outside of my works, i write post about intersting subject like VR, Database... in my
+                    personal
+                    <a class="text-sinapinkcolor" href="./blog.html">Blog </a>!
+                </h4>
+
+            </div>
+            <!-- End Introduction Text -->
+            
+            <!-- Hire Me Button -->
+            <div
+                class="2xl:text-lg
+                mt-16 w-fit border-2 py-3 px-6 rounded-md border-sinapinkbordercolor transition duration-500 ease-in-out hover:scale-110">
+                <a href="mailto:sinakgt@gmail.com" class="text-sinapinkcolor">Hire Me!</a>
+            </div>
+            <!-- End Hire Me Button -->
+
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                   lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                   2xl:py-40 2xl:mx-36 2xl:px-0 2xl:my-0
+
+                                   px-6 py-16
+                                   font-Yusei-Magic">
+
+            <!-- about Section header -->
+            <div class="text-white
+                        flex flex-row items-center
+                        mb-16">
+                <div class="2xl:text-lg
+                            flex justify-between">
+
+                    <span class="text-sinapinkcolor flex mr-1">I.</span>
+                    <span class="text-sinapinkcolor flex flex-row mr-5 w-max">About Me</span>
+                </div>
+                <hr class="w-full bg-white text-white  items items-center">
+                <hr>
+            </div>
+            <!-- End about Section header -->
+
+            <!-- About Me text -->
+            <div class="2xl:py-36 2xl:mx-0 2xl:px-0 2xl:my-0
+                        container mx-auto">
+                <div class="grid grid-cols-1
+                            md:grid-cols-2 gap-6">
+
+                    <div class="md:row-span-2
+
+                                text-xl rounded-xl
+                                p-6 items-center">
+
+                        <div class="col-start-2 col-span-4">
+                            <div class="md:text-center
+                                        items-center
+                                        text-white capitalize">
+                                i have been student of maths in high school and because of my
+                                <span class="text-sinapinkcolor">passion to programming</span>
+
+                                i do programming in my free time, since i started to developing interesting project in
+                                <span class="text-sinapinkcolor">AI(Artifical Inteligence)</span>
+
+                                AR(Augmented Reality), Web application programming
+                                <span class="text-sinapinkcolor">(Frontend/Backend)</span>
+
+                                and complete my bachelors in computer science and enginnering (2019-2022).
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="md:row-span-2 
+                                flex justify-center items-center
+                                rounded-xl p-6">
+                            <div class="border-2 border-sinapinkbordercolor bg-gray-800-/45
+                                        w-44 h-44
+                                        transition duration-700 hover:-translate-x-3 ">
+                                <img src="./Assets/icons/sina.png" alt="sina picture"
+                                    class=" bg-black w-44 h-44 border-sinapinkbordercolor -translate-x-3 -translate-y-3 border-y border-r                        border-gray-500/70 grayscale transition duration-700 hover:-translate-x-3 hover:grayscale-0">
+                            </div>
+                    </div>
+
+                    <div class="md:col-span-2
+                                2xl:mt-32 
+                                flex justify-center flex-col
+                                text-xl rounded-xl p-6">
+
+                        <div class="md:text-center">
+                            <h4 class="text-white capitalize">
+                                Today i'm working as a part time software enginner and
+                                study master of Software Enginenr im main research area is
+                                <span class="text-sinapinkcolor">high performance computing</span>
+                                and <span class="text-sinapinkcolor">distributed Software </span>Machin learning.
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End About Me text -->
+
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="tech" class="md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                  lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                  2xl:py-40 2xl:mx-0 2xl:px-0 2xl:my-0
+
+
+                                  px-6 py-16
+                                  font-Yusei-Magic">
+
+            <!-- tech stack Section header -->
+            <div class="flex flex-row items-center 
+                        text-sina mb-16">
+
+                <div class="2xl:text-xl
+                            flex justify-between">
+                    <span class="text-sinapinkcolor flex mr-1">II.</span>
+                    <span class="text-sinapinkcolor flex flex-row mr-5 w-max">Tech Stack</span>
+                </div>
+
+                <hr class="w-full bg-white text-white  items items-center">
+                <hr>
+            </div>
+
+            <!-- Programming and Tools -->
+            <div class="flex flex-col items-center 2xl:mx-64
+                        text-sinapinkcolor ">
+                <hr>
+                <h2 class="2xl:text-lg 
+                           flex justify-center 
+                           mb-9 pb-2 
+                           border-b-2 border-sinapinkcolor">Programming Languages and Tools</h2>
+
+
+                <div class="md:grid md:grid-col-4">
+                    <!-- Frontend -->
+                    <div class="col-span-1 row-span-1 mx-12">
+                        <div class="flex flex-col items-center
+                                    text-sinapinkcolor 
+                                    mt-12">
+
+                            <h2 class="2xl:text-lg
+                                        flex justify-center 
+                                        mb-9 pb-2
+                                        border-b-2 border-sinapinkcolor">FrontEnd</h2>
+                        
+                            <div class="flex flex-row flex-wrap
+                                        justify-center items-center
+                                        space-x-3">
+                            
+                            <!-- HTML -->
+                            <div
+                                class="flex flex-col items-center justify-center rounded-md 
+                                    border-2 border-sinalightbludborderecolor
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale
+                                    hover:grayscale-0">
+    
+                                <img src="./Assets/icons/html.svg" alt="HTML" class="w-8">
+                                <h3 class="mt-2">HTML</h3>
+                            </div>
+    
+                            <!-- CSS -->
+                            <div
+                                class="flex flex-col items-center justify-center rounded-md 
+                                    border-2 border-sinapinkbordercolor
+                                    px-2 py-2
+                                    bg-blue-900/20 grayscale-0
+                                    hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/css.svg" alt="HTML" class="w-8">
+                                <h3 class="mt-2">CSS</h3>
+                            </div>
+    
+                            <!-- Taliwind -->
+                            <div
+                                class="flex flex-col  items-center justify-center rounded-md
+                                    border-2 border-sinapinkbordercolor
+                                    px-4 py-2  my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale 
+                                    hover:grayscale-0 ">
+    
+                                <img src="./Assets/icons/tailwind-css-2.svg" alt="Tailwind" class="w-12">
+                                <h3 class="mt-2">Tailwind</h3>
+                            </div>
+    
+                            <!-- Git -->
+                            <div
+                                class="flex flex-col items-center justify-center  rounded-md
+                                    border-2 border-sinapinkbordercolor
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale-0
+                                    hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/git-bash.svg" alt="Git" class="w-8">
+                                <h3 class="mt-2">Git</h3>
+                            </div>
+                               
+                            </div>
+
+                             
+                        </div>
+                    </div>
+
+                    <!-- Backend  -->
+                    <div class="row-span-2">
+                        <div class="flex flex-row flex-wrap justify-center items-center
+                                    space-x-3 ">
+
+                                <h2 class="2xl:text-lg
+                                flex justify-center 
+                                mb-9 pb-2
+                                border-b-2 border-sinapinkcolor">Backend</h2>
+                                
+                            <div class="flex flex-row flex-wrap
+                            justify-center items-center
+                            space-x-3">
+
+                            <!-- Python -->
+                            <div class="flex flex-col items-center justify-center
+                            border-2  border-sinapinkbordercolor rounded-md
+                            px-4 py-2 my-2
+                            transition duration-700
+                            bg-blue-900/20 grayscale 
+                            hover:grayscale-0">
+    
+                                <img src="./Assets/icons/python.svg" alt="Python" class="w-9">
+                                <h3 class="mt-2">Python3</h3>
+                            </div>
+                        
+                            <!-- Django -->
+                            <div class="flex flex-col items-center justify-center
+                                        border-2  border-sinalightbludborderecolor rounded-md
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale-0 
+                                        hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/django.svg" alt="Django" class="w-7">
+                                <h3 class="mt-2">Django</h3>
+                            </div>
+    
+                            <!-- FastAPI -->
+                            <div
+                                class="flex flex-col items-center  justify-center
+                                    border-2  border-sinapinkbordercolor rounded-md
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale 
+                                    hover:grayscale-0">
+    
+                                <img src="./Assets/icons/fastapi.svg" alt="FastAPI" class="w-8">
+                                <h3 class="mt-2">FastAPI</h3>
+                            </div>
+    
+                            <!-- CPP -->
+                            <div
+                                class="flex flex-col items-center justify-center
+                                    border-2 border-sinalightbludborderecolor rounded-md
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale-0 
+                                    hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/cpp.svg" alt="CPP" class="w-8">
+                                <h3 class="mt-2">Cpp</h3>
+                            </div>
+    
+                            <!-- java -->
+                            <div class="flex flex-col items-center justify-center
+                                        border-2 border-sinapinkbordercolor rounded-md
+                                        px-4 py-2  my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale 
+                                        hover:grayscale-0">
+    
+                                <img src="./Assets/icons/java.svg" alt="Java" class="w-5">
+                                <h3 class="mt-2">Java</h3>
+                            </div>
+    
+                            <!-- java Script -->
+                            <div
+                                class="flex flex-col items-center justify-center
+                                    border-2 border-sinalightbludborderecolor rounded-md
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale-0
+                                    hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/javascript.svg" alt="javascript" class="w-8">
+                                <h3 class="mt-2">JS</h3>
+                            </div>
+    
+                            <!-- Flask -->
+                            <div
+                                class="flex flex-col items-center justify-center rounded-md
+                                    border-2 border-sinapinkbordercolor
+                                    px-4 py-2 my-2
+                                    transition duration-700
+                                    bg-blue-900/20 grayscale-0
+                                    hover:grayscale animate-pulse">
+    
+                                <img src="./Assets/icons/flask.svg" alt="javascript" class="w-10">
+                                <h3 class="mt-2">Flask</h3>
+                            </div>
+
+                             <!-- Bash -->
+                             <div
+                             class="flex flex-col items-center justify-center rounded-md
+                                 border-2 border-sinapinkbordercolor
+                                 px-4 py-2 my-2
+                                 transition duration-700
+                                 bg-blue-900/20
+                                 grayscale hover:grayscale-0">
+ 
+                             <img src="./Assets/icons/bash.svg" alt="Git" class="w-16">
+                             <h3 class="mt-2">Bash</h3>
+                         </div>
+ 
+                         <!-- RabbitMQ -->
+                         <div
+                             class="flex flex-col items-center justify-center  rounded-md 
+                                 border-2 border-sinapinkbordercolor
+                                 px-4 py-2 my-2
+                                 transition duration-700
+                                 bg-blue-900/20 grayscale-0
+                                 hover:grayscale animate-pulse">
+ 
+                             <img src="./Assets/icons/rabbitmq.svg" alt="RabbitMQ" class="w-10">
+                             <h3 class="mt-2">RabbitMQ</h3>
+                         </div>
+ 
+                         <!-- Postman -->
+                         <div
+                             class="flex flex-col items-center rounded-md justify-center
+                                 border-2 border-sinalightbludborderecolor
+                                 px-4 py-2 my-2
+                                 transition duration-700
+                                 bg-blue-900/20 grayscale
+                                 hover:grayscale-0">
+ 
+                             <img src="./Assets/icons/postman.svg" alt="Postman" class="w-10">
+                             <h3 class="mt-2">Postman</h3>
+                         </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <!-- Databases part -->
+                    <div class="col-span-1 row-span-3">
+                        <div class="flex flex-col items-center
+                                    text-sinapinkcolor 
+                                    mt-12">
+                            
+                            <h2 class="2xl:text-lg
+                                       flex justify-center 
+                                       mb-9 pb-2
+                                       border-b-2 border-sinapinkcolor">Database</h2>
+        
+                            <div class="flex flex-row flex-wrap
+                                        justify-center items-center
+                                        space-x-3">
+        
+                                <!-- Postgres -->
+                                <div class="flex flex-col items-center justify-center rounded-md 
+                                            border-2 border-sinalightbludborderecolor
+                                            px-4 py-2 my-2
+                                            transition duration-700
+                                            bg-blue-900/20 grayscale-0
+                                            hover:grayscale animate-pulse">
+        
+                                    <img src="./Assets/icons/postgresql.svg" alt="PostgreSQL" class="w-16">
+                                    <h3 class="mt-2">PostgreSQL</h3>
+                                </div>
+        
+        
+                                <!-- My SQL -->
+                                <div
+                                    class="flex flex-col items-center justify-center rounded-md
+                                        border-2 border-sinapinkbordercolor
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale
+                                        hover:grayscale-0">
+        
+                                    <img src="./Assets/icons/mysql.svg" alt="MySQL" class="w-16">
+                                    <h3 class="mt-2">My SQL</h3>
+                                </div>
+        
+                                <!-- SQLITE -->
+                                <div
+                                    class="flex flex-col items-center justify-center rounded-md
+                                        border-2 border-sinalightbludborderecolor
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale-0
+                                        hover:grayscale animate-pulse">
+        
+                                    <img src="./Assets/icons/sqlite.svg" alt="Sqlite" class="w-20">
+                                    <h3 class="mt-2">Sqlite</h3>
+                                </div>
+        
+                                <!-- GraphQL -->
+                                <div
+                                    class="flex flex-col items-center  justify-center rounded-md 
+                                        border-2  border-sinapinkbordercolor
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale
+                                        hover:grayscale-0">
+        
+                                    <img src="./Assets/icons/graphql.svg" alt="GraphQL" class="w-8">
+                                    <h3 class="mt-2">GraphQL</h3>
+                                </div>
+        
+        
+                                <!-- Redis -->
+                                <div
+                                    class="flex flex-col items-center justify-center rounded-md 
+                                        border-2  border-sinalightbludborderecolor
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale-0
+                                        hover:grayscale animate-pulse">
+        
+                                    <img src="./Assets/icons/redis.svg" alt="Redis" class="w-8">
+                                    <h3 class="mt-2">Redis</h3>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+
+                    <!-- OS part -->
+                    <div class="col-start-2 row-span-3">
+                        <div class="flex flex-col items-center 
+                                    text-sinapinkcolor
+                                    mt-12">
+                            <hr>
+                            <h2 class="2xl:text-lg
+                                    flex justify-center
+                                    mb-9 pb-2
+                                    border-b-2 border-sinapinkcolor">OS</h2>
+        
+                            <div class="flex flex-row flex-wrap justify-center items-center
+                                        space-x-3 ">
+        
+                                <!-- Linux -->
+                                <div
+                                    class="flex flex-col items-center rounded-md justify-center
+                                        border-2 border-sinalightbludborderecolor
+                                        px-4 py-2  my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale-0 
+                                        hover:grayscale animate-pulse">
+        
+                                    <img src="./Assets/icons/arch-linux.svg" alt="Linux" class="w-28">
+                                    <h3 class="mt-2">Linux</h3>
+                                </div>
+        
+                                <!-- Windows -->
+                                <div
+                                    class="flex flex-col items-center rounded-md justify-center
+                                        border-2 border-sinapinkbordercolor
+                                        px-4 py-2 my-2
+                                        transition duration-700
+                                        bg-blue-900/20 grayscale
+                                        hover:grayscale-0">
+        
+                                    <img src="./Assets/icons/microsoft-windows.svg" alt="Windows" class="w-14">
+                                    <h3 class="mt-2">Windows</h3>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>  
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                      lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                      2xl:py-40 2xl:mx-0 2xl:px-0 2xl:my-0
+
+                                      px-6 py-16 
+                                      font-Yusei-Magic">
+
+            <!-- Fetured Projects Section header -->
+            <div class="flex flex-row items-center 
+                        text-sina
+                        mb-16">
+                <div class="flex justify-between">
+                    <span class="flex
+                                 text-sinapinkcolor
+                                 mr-1">III.</span>
+
+                    <span class="flex flex-row
+                                 2xl:text-xl
+                                 text-sinapinkcolor
+                                 mr-5 w-max">Projects</span>
+                </div>
+                <hr class="w-full
+                           bg-white text-white
+                           items items-center">
+                <hr>
+            </div>
+
+            <div class="container mx-auto ">
+                <div class="grid grid-cols-1
+                            md:grid-cols-4
+                            2xl:grid-cols-4 gap-6">
+
+                    <!-- First Project -->
+                    <div class="md:col-span-3 md:row-span-1
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:-translate-x-4 2xl:transition 2xl:duration-300
+                                
+                                text-lg
+                                rounded-xl  border-2 border-sinapinkbordercolor relative">
+
+                        <!-- Card Grid -->
+                        <div class="grid grid-cols-1">
+                            <!-- Image Div -->
+                            <div class="col-start-1 row-span-1">
+                                <img class="h-full w-max object-cover rounded-t-lg"
+                                    src="https://miro.medium.com/max/858/1*xzctySmhen3ey_QBglIPyQ.jpeg">
+                            </div>
+
+                            <!-- Tag Div -->
+                            <div class="col-start-1 row-span-1 px-8 mt-4">
+                                <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                            shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                    Devops</h4>
+                            </div>
+                            <!-- Title Div -->
+                            <div class="col-start1 row-span-1 mx-6">
+                                <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                </h5>
+                            </div>
+
+                            <!-- Body Div -->
+                            <div class="px-8 mb-4 h-72 pt-3
+                                        text-ellipsis">
+                                <p class="text-gray-700 dark:text-gray-400 capitalize ml-3 ">In this post you
+                                    can learn a lot about docker container, What is it and how to use it</p>
+                            </div>
+
+                            <!-- Author Div -->
+                            <div class="px-8 pb-4 bottom-0 absolute text-ellipsis">
+                                <div class="flex items-center">
+                                    <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                        src="./Assets/icons/sina.png"
+                                        alt="">
+
+                                    <div class="flex flex-col text-sm">
+                                        <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                            Khoshgoftar</span>
+                                        <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Project -->
+
+                    <!-- Second project -->
+                    <div class="md:col-span-2 md:row-span-1
+                                2xl:col-span-3 2xl:row-span-1
+                                2xl:hover:translate-x-4 2xl:transition 2xl:duration-300
+
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative ">
+                        <!-- Card Grid -->
+                        <div class="container">
+                            <div class="grid grid-cols-1 ">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://miro.medium.com/max/1400/1*HS1OsFO7ayf_ZUzPus1FCQ.jpeg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 h-72 pt-3
+                                            text-ellipsis">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin  ">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Project -->
+
+                    <!-- Third Project  -->
+                    <div class="md:col-span-2
+                                2xl:col-span-1
+                                2xl:hover:-translate-x-4 2xl:transition 2xl:duration-300
+                                text-lg
+                                rounded-xl  border-2 border-sinapinkbordercolor relative">
+                         <!-- Card Grid -->
+                         <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/ico_h/22436.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">Z fold 2 i comming 2022
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 h-72 pt-3">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3"> adipisicing elit. Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pb-4 bottom-0 absolute" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Project -->
+
+                    <!-- Forth Project  -->
+                    <div class="md:col-start-2 md:col-end-5
+                                2xl:col-span-2 2xl:row-span-1
+                                2xl:hover:translate-y-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                         <!-- Card Grid -->
+                         <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/ico_h/23886.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 h-72 pt-3
+                                            text-ellipsis">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">adipisicing elit. Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Project -->
+
+                    <!-- Fifth Project  -->
+                    <div class="md:col-span-3 md:row-span-1
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:translate-x-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                        <!-- Card Grid -->
+                        <div class="container">
+                           <div class="grid grid-cols-1">
+                               <!-- Image Div -->
+                               <div class="col-start-1 row-span-1">
+                                   <img class="h-full w-max object-cover rounded-t-lg"
+                                       src="https://wallpapershome.com/images/pages/pic_h/22434.jpg">
+                               </div>
+                               <!-- Tag Div -->
+                               <div class="col-start-1 row-span-1 px-8 mt-4">
+                                   <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                       shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                       Technology</h4>
+                               </div>
+                               <!-- Title Div -->
+                               <div class="col-start-1 row-span-1 px-6">
+                                   <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                   </h5>
+                               </div>
+
+                               <!-- Body Div -->
+                               <div class="col-start-1 row-span-1
+                                           px-8 mb-4 pt-3 h-72
+                                           text-ellipsis">
+                                   <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">elit. Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                               </div>
+
+                               <!-- Author Div -->
+                               <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                   <div class="flex items-center">
+                                       <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                           src="./Assets/icons/sina.png"
+                                           alt="">
+
+                                       <div class="flex flex-col text-sm">
+                                           <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                               Khoshgoftar</span>
+                                           <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- End Project -->
+            </div>
+
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                  lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                  2xl:py-40 2xl:mx-0 2xl:px-0 2xl:my-0
+
+                                  px-6 py-16
+                                  font-Yusei-Magic">
+
+            <!-- Fetured Projects Section header -->
+            <div class="flex flex-row items-center 
+                        text-sina
+                        mb-16">
+                <div class="flex justify-between 2xl:text-lg">
+                    <span class="flex
+                                 text-sinapinkcolor
+                                 mr-1">III.</span>
+
+                    <span class="flex flex-row 
+                                 text-sinapinkcolor
+                                 mr-5 w-max">Latest Blog Post</span>
+                </div>
+
+                <hr class="w-full
+                           bg-white text-white
+                           items items-center">
+                <hr>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1
+                            md:grid-cols-5
+                            2xl:grid-cols-5 
+                            gap-6">
+
+                    <!-- First Blog Post -->
+                    <div class="col-span-1
+                                md:col-span-2 md:row-span-2
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:-translate-x-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                        <!-- Card Grid -->
+                        <div class="grid grid-cols-1">
+                            <!-- Image Div -->
+                            <div class="col-start-1 row-span-1">
+                                <img class="h-full w-max object-cover rounded-t-lg"
+                                    src="https://miro.medium.com/max/858/1*xzctySmhen3ey_QBglIPyQ.jpeg">
+                            </div>
+
+                            <!-- Tag Div -->
+                            <div class="col-start-1 row-span-1 px-8 mt-4">
+                                <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                            shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                    Devops</h4>
+                            </div>
+                            <!-- Title Div -->
+                            <div class="col-start1 row-span-1 mx-6">
+                                <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                </h5>
+                            </div>
+
+                            <!-- Body Div -->
+                            <div class="px-8 mb-4 h-72 pt-3
+                                        text-ellipsis">
+                                <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">In this post you
+                                    can learn a lot about docker container, What is it and how to use it</p>
+                            </div>
+
+                            <!-- Author Div -->
+                            <div class="px-8 pb-4 bottom-0 absolute">
+                                <div class="flex items-center">
+                                    <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                        src="./Assets/icons/sina.png"
+                                        alt="">
+
+                                    <div class="flex flex-col text-sm">
+                                        <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                            Khoshgoftar</span>
+                                        <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Post -->
+
+
+                    <!-- Second Blog Post -->
+                    <div class="col-span-1
+                                md:col-span-3 md:row-span-2
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:-translate-y-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative ">
+                        <!-- Card Grid -->
+                        <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://miro.medium.com/max/1400/1*HS1OsFO7ayf_ZUzPus1FCQ.jpeg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 pt-3 text-ellipsis h-72">
+                                <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">5Aperiam, reprerit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Blog Post -->
+
+                    <!-- Third Blog Post  -->
+                    <div class="col-span-1
+                                md:col-span-5 md:row-span-1
+                                2xl:col-span-3 2xl:row-span-1
+                                2xl:hover:translate-x-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                         <!-- Card Grid -->
+                         <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/pic_h/13087.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 pt-3 text-ellipsis h-72">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Post -->
+
+                    <!-- Forth Blog Post  -->
+                    <div class="col-span-1
+                                md:col-span-2 md:row-span-1
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:-translate-x-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                         <!-- Card Grid -->
+                         <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/ico_h/23886.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 pt-3 text-ellipsis h-72">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Post -->
+
+                    <!-- Fifth Blog Post  -->
+                    <div class="col-span-1
+                                md:col-span-3 md:row-span-1
+                                2xl:col-span-1 2xl:row-span-1
+                                2xl:hover:translate-y-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                        <!-- Card Grid -->
+                        <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/ico_h/23526.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 pt-3 text-ellipsis h-72">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Blog Post -->
+
+
+                    <!-- sixth Blog Post  -->
+                    <div class="col-span-1
+                                md:col-span-5 md:row-span-2
+                                2xl:col-span-3 2xl:row-span-1
+                                2xl:hover:translate-x-4 2xl:transition 2xl:duration-300
+
+                                text-lg
+                                rounded-xl border-2 border-sinapinkbordercolor relative">
+                         <!-- Card Grid -->
+                         <div class="container">
+                            <div class="grid grid-cols-1">
+                                <!-- Image Div -->
+                                <div class="col-start-1 row-span-1">
+                                    <img class="h-full w-max object-cover rounded-t-lg"
+                                        src="https://wallpapershome.com/images/pages/pic_h/7996.jpg">
+                                </div>
+                                <!-- Tag Div -->
+                                <div class="col-start-1 row-span-1 px-8 mt-4">
+                                    <h4 class="bg-sinapinkcolor dark:bg-sinapinkbordercolor/75 text-white dark:text-gray-300 
+                                                        shadow-sm  inline-block  mb-5  mt-1 px-2 py-1 rounded-md ml-3">
+                                        Technology</h4>
+                                </div>
+                                <!-- Title Div -->
+                                <div class="col-start-1 row-span-1 px-6">
+                                    <h5 class="capitalize dark:text-gray-200 ml-3">What is Docker and how to use it?
+                                    </h5>
+                                </div>
+
+                                <!-- Body Div -->
+                                <div class="col-start-1 row-span-1
+                                            px-8 mb-4 pt-3 h-72
+                                            text-ellipsis">
+                                    <p class="text-gray-700 dark:text-gray-400 capitalize ml-3">Aperiam, reprehenderit sequi a error odio odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus!</p>
+                                </div>
+
+                                <!-- Author Div -->
+                                <div class="px-8 pt-16 pb-4 bottom-0 absolute overflow-hidden" >
+                                    <div class="flex items-center">
+                                        <img class="object-cover w-9 h-9 rounded-full dark:border-sinapinkbordercolor border-2 border-gray-400"
+                                            src="./Assets/icons/sina.png"
+                                            alt="">
+
+                                        <div class="flex flex-col text-sm">
+                                            <span class="ml-2 text-black dark:text-gray-300  font-thin">Sina
+                                                Khoshgoftar</span>
+                                            <span class="ml-2 text-black dark:text-gray-300 ">2h ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                     <!-- End Blog Post -->
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="md:pt-6 md:mt-40 md:py-14 md:px-6 md:ml-7 
+                                     lg:py-36 lg:mx-0 lg:px-0 lg:my-0
+                                     2xl:py-40 2xl:mx-0 2xl:px-0 2xl:my-0
+
+                                    px-6 py-16
+                                    font-Yusei-Magic">
+
+            <!-- Contact Section header -->
+            <div class="flex flex-row 
+                        text-sina
+                        items-center
+                        mb-8">
+                <div class="flex justify-between 2xl:text-lg">
+                    <span class="flex 
+                                 text-sinapinkcolor
+                                 mr-1">V.</span>
+
+                    <span class="flex flex-row
+                                 text-sinapinkcolor
+                                 mr-5 w-max">Contact me</span>
+                </div>
+
+                <hr class="w-full bg-white text-white  items items-center">
+                <hr>
+
+            </div>
+            <div class="container px-5 mx-auto">
+                <div class="flex flex-col
+                            text-center
+                            w-full mb-8">
+
+                    <p class="lg:w-2/3 2xl:text-lg
+                              mx-auto
+                              leading-relaxed
+                              text-base text-white capitalize">if you have question in your mind<br>feel free to ask question i will help you if i can :)</p>
+                </div>
+                <div class="lg:w-1/2
+                            md:w-2/3
+                            mx-auto">
+
+                    <div class="flex flex-wrap
+                               -m-2">
+
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7
+                                                         text-sm text-gray-400">Name</label>
+
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="#about" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <img src="./Assets/logo.svg" alt="logo"
+                 class="w-8 items-center rotate-180 animate-bounce md:hover:animate-bounce  duration-150" >
+            </a>
+            <p
+                class="text-sm items-center flex  justify-center flex-col text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 italic">
+                © 2022 — Development and Design By
+                <a href="https://t.me/sina_khoshgoftar" class="text-gray-500 ml-1 items-center flex justify-center italic"
+                    target="_blank" rel="noopener noreferrer">@Sina_Khoshgoftar</a>
+            </p>
+            <span class="inline-flex items-center border-x-2 px-3 border-gray-800  sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-4">
+                <a href="https://github.com/sinakgt" target="_blank">
+                    <svg class="fill-sinagithubcolor hover:scale-125 transition duration-300" width="18px" height="18px"
+                        viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sina-khoshgoftar/" target="_blank">
+                    <svg class="fill-sinalinkedincolor hover:scale-125 transition duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+                <a href="https://t.me/sina_khoshgoftar">
+                    <svg class="fill-sinatelegramcolor hover:scale-125 transition duration-300" version="1.0"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="24px" height="24px" viewBox="0 0 100 100"
+                        enable-background="new 0 0 100 100" xml:space="preserve">
+                        <path d="M84.16,14.148l-71.047,29.57c0,0-3.359,1.221-3.099,3.473c0.267,2.256,3.008,3.288,3.008,3.288l17.877,6.382
+	c0,0,5.396,18.772,6.458,22.344c1.062,3.562,1.914,3.646,1.914,3.646c0.989,0.456,1.888-0.27,1.888-0.27l11.55-11.169L70.71,86.054
+	c4.869,2.253,6.641-2.441,6.641-2.441L90,15.935C90,11.427,84.16,14.148,84.16,14.148z M71.582,78.17L52.324,62.51l-5.976,5.777
+	l1.314-12.291l25.67-24.329L38.341,52.441l-15.521-5.54l59.217-24.648L71.582,78.17z" />
+                    </svg>
+                </a>
+                
+            </span>
+        </div>
+    </footer>
+
+    <script src="./Assets/Script/script.js"></script>
+
+</body>
+
+</html>
